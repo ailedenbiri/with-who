@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GridCO[] level2Grids;
     [SerializeField] private GridCO[] grids;
     private int totalCards;
+    bool levelCompleted;
     private void Start()
     {
         grids = GameObject.FindObjectsOfType<GridCO>(false);
@@ -15,7 +17,7 @@ public class GameManager : MonoBehaviour
 
         
         totalCards = GameObject.FindObjectsOfType<Card>(false).Length;
-
+      
     }
 
     void Update()
@@ -34,6 +36,9 @@ public class GameManager : MonoBehaviour
                 hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
             }
         }
+       
+
+
     }
 
     Vector3 GetAveragePosition(GridCO[] grids)
@@ -49,9 +54,22 @@ public class GameManager : MonoBehaviour
     }
 
 
-    
+    public void CheckCorrectPlacement()
+    {
 
+        totalCards--;
 
-
+        // Eðer tüm kartlar doðru yerleþtirildiyse
+        if (totalCards == 0)
+        {
+            // next level
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+        else
+        {
+            levelCompleted = false;
+        }
+    }
 
 }

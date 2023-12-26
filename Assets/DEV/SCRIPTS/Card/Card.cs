@@ -11,7 +11,10 @@ using Unity.Burst.CompilerServices;
 
 
 public class Card : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHandler
+
 {
+  
+
     [Header("Card Settings")]
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text info;
@@ -79,6 +82,7 @@ public class Card : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHan
         {
             if(hit.collider.GetComponent<GridCO>().isEmpty)
             {
+
                 UIManager uiManager = FindObjectOfType<UIManager>();               
                 uiManager.IncreaseCityHappiness(5); //þehir mutluluðu artsýn 
 

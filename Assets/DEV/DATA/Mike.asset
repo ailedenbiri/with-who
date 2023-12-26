@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81e39c969ec29874dba387edff736801, type: 3}
-  m_Name: Card1
+  m_Name: Mike
   m_EditorClassIdentifier: 
-  name: Leo
-  info: "I l\u0131ke trees"
-  image: {fileID: 21300000, guid: 226a5d31133e224498ef0330fe69039f, type: 3}
-  prefab: {fileID: 8844162073231507130, guid: 4aacc2476f57ec64a86c5019c0a01bae, type: 3}
+  name: Mauro
+  info: "\u0131 l\u0131ke trees, dont stand next to leo"
+  image: {fileID: 21300000, guid: 073649ecb70a7054387889ee05ab1ed3, type: 3}
+  prefab: {fileID: 4838373711489793583, guid: 55d2a8f2b900ba64f93fa67bfa0320b8, type: 3}
