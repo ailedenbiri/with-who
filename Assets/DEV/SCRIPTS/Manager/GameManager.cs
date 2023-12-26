@@ -1,23 +1,26 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private GridCO[] level2Grids;
     [SerializeField] private GridCO[] grids;
     private int totalCards;
-    bool levelCompleted;
+
+    public GridCO[] newGrids;
     private void Start()
     {
         grids = GameObject.FindObjectsOfType<GridCO>(false);
         Camera.main.transform.position = GetAveragePosition(grids);
-
-        
         totalCards = GameObject.FindObjectsOfType<Card>(false).Length;
-      
+
+        for (int i = 0; i < newGrids.Length; i++)
+        {
+            newGrids[i].transform.DOScale(Vector3.zero, 0.4f).SetDelay(i * 0.1f).From();
+        }
     }
 
     void Update()
@@ -36,7 +39,7 @@ public class GameManager : MonoBehaviour
                 hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
             }
         }
-       
+
 
 
     }
@@ -54,21 +57,18 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void CheckCorrectPlacement()
+    public void CorrectCardPlaced()
     {
-
         totalCards--;
 
         // Eðer tüm kartlar doðru yerleþtirildiyse
         if (totalCards == 0)
         {
-            // next level
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex + 1);
-        }
-        else
-        {
-            levelCompleted = false;
+            DOVirtual.DelayedCall(2f, () =>
+            {
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex + 1);
+            });
         }
     }
 

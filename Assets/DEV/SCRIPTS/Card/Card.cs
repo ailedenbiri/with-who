@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 using Unity.VisualScripting;
 using System.Linq;
-using Unity.Burst.CompilerServices;
 
 
 public class Card : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHandler
@@ -82,6 +81,8 @@ public class Card : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHan
         {
             if(hit.collider.GetComponent<GridCO>().isEmpty)
             {
+
+                GameManager.i.CorrectCardPlaced();
 
                 UIManager uiManager = FindObjectOfType<UIManager>();               
                 uiManager.IncreaseCityHappiness(5); //þehir mutluluðu artsýn 
