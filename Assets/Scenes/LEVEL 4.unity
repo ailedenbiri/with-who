@@ -6146,7 +6146,7 @@ PrefabInstance:
     - target: {fileID: 4082793257173764793, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 65027582}
+      objectReference: {fileID: 1301285654}
     - target: {fileID: 5540425264012650768, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: m_Name
       value: Card - Leo
@@ -10492,7 +10492,7 @@ PrefabInstance:
     - target: {fileID: 4082793257173764793, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 1301285654}
+      objectReference: {fileID: 65027582}
     - target: {fileID: 5540425264012650768, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: m_Name
       value: Card - Mike
