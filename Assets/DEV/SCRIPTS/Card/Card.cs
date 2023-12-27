@@ -74,8 +74,8 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
                         uiManager.IncreaseCityHappiness(5); //þehir mutluluðu artsýn 
 
                         hit.collider.GetComponent<GridCO>().isEmpty = false;
-                        Vector2 spawnPosition = hit.collider.bounds.center + Vector3.up * 0.3f;
-                        Instantiate(cardInfo.prefab, spawnPosition, Quaternion.identity);
+                        Vector2 spawnPosition = hit.collider.bounds.center;
+                        Instantiate(cardInfo.prefab, spawnPosition + Vector2.up * 0.3f, Quaternion.identity);
                         GameObject p = Instantiate(GameAssets.i.characterPlacedParticle, spawnPosition, Quaternion.identity);
                         p.GetComponentInChildren<ParticleSystem>().Play();
                         Destroy(p.gameObject, 5f);

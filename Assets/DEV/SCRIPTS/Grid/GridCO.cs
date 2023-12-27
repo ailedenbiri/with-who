@@ -14,6 +14,7 @@ public class GridCO : MonoBehaviour
     private void Start()
     {
         startPos = transform.localPosition;
+        GetComponent<SpriteRenderer>().sortingOrder = (int)(transform.position.y * -100f);
     }
 
 
