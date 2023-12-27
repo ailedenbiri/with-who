@@ -6,6 +6,36 @@ using System.Linq;
 
 public class UIManager : Singleton<UIManager>
 {
+
+    [Header("MainMenu")]
+    [SerializeField] GameObject mainMenuPanel;
+    [SerializeField] private GameObject restartButton;
+    [SerializeField] private GameObject quitGameButton;
+
+
+    [Header("PausePanel")]
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject pauseButton;
+    [SerializeField] private GameObject playButton;
+
+
+
+    [Header("Settings")]
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject quitButton;
+    [SerializeField] private GameObject soundOnButton;
+    [SerializeField] private GameObject soundOffButton;
+
+    [Header("LosePanel")]
+    [SerializeField] private GameObject losePanel;
+
+    [Header("WinPanel")]
+    [SerializeField] private GameObject winPanel;
+
+
+
+
+
     [Header("Health")]
 
     public int health = 3;
