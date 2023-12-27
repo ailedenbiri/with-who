@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Mike 3
   m_EditorClassIdentifier: 
   cardName: Mike
-  info: "th\u0131s stand \u0131s so soft"
+  info: "th\u0131s stand \u0131s so soft."
   image: {fileID: 21300000, guid: 073649ecb70a7054387889ee05ab1ed3, type: 3}
   prefab: {fileID: 4838373711489793583, guid: 55d2a8f2b900ba64f93fa67bfa0320b8, type: 3}
   cardSprite: {fileID: 21300000, guid: d8a198574928e35439af213b11317686, type: 3}

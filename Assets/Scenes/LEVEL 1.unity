@@ -15454,6 +15454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSpawnParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 9215922137190214342, guid: df84e6f33df34444ebaea6e5c566dddf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15474,7 +15478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3016343491136007058
 GameObject:
   m_ObjectHideFlags: 0
