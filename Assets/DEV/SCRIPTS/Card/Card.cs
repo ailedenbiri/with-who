@@ -76,6 +76,9 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
                         hit.collider.GetComponent<GridCO>().isEmpty = false;
                         Vector2 spawnPosition = hit.collider.bounds.center + Vector3.up * 0.3f;
                         Instantiate(cardInfo.prefab, spawnPosition, Quaternion.identity);
+                        GameObject p = Instantiate(GameAssets.i.characterPlacedParticle, spawnPosition, Quaternion.identity);
+                        p.GetComponentInChildren<ParticleSystem>().Play();
+                        Destroy(p.gameObject, 5f);
                         Destroy(gameObject);
                         return;
                     }
