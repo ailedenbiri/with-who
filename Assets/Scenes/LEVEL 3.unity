@@ -1261,6 +1261,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d32aecff30fc740b2ef95fe7539f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuPanel: {fileID: 0}
+  restartButton: {fileID: 0}
+  quitGameButton: {fileID: 0}
+  pausePanel: {fileID: 0}
+  pauseButton: {fileID: 0}
+  playButton: {fileID: 0}
+  settingsPanel: {fileID: 0}
+  quitButton: {fileID: 0}
+  soundOnButton: {fileID: 0}
+  soundOffButton: {fileID: 0}
+  losePanel: {fileID: 0}
+  winPanel: {fileID: 0}
   health: 3
   hearts:
   - {fileID: 628590680}
@@ -3719,8 +3731,8 @@ Material:
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
-    - _RoundWaveSpeed: 2
-    - _RoundWaveStrength: 0.7
+    - _RoundWaveSpeed: 1
+    - _RoundWaveStrength: 0.1
     - _ShadowAlpha: 0.5
     - _ShadowX: 0.1
     - _ShadowY: -0.05
@@ -3737,11 +3749,11 @@ Material:
     - _TwistUvPosX: 0.5
     - _TwistUvPosY: 0.5
     - _TwistUvRadius: 0.75
-    - _WaveAmount: 15
-    - _WaveSpeed: 8
-    - _WaveStrength: 25
-    - _WaveX: 1
-    - _WaveY: 0
+    - _WaveAmount: 5
+    - _WaveSpeed: 3
+    - _WaveStrength: 2
+    - _WaveX: 0.5
+    - _WaveY: 0.163
     - _ZTestMode: 4
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
@@ -11544,7 +11556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7019297031732878558
 MonoBehaviour:
   m_ObjectHideFlags: 0
