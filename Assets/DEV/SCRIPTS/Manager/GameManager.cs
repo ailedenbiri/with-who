@@ -64,6 +64,7 @@ public class GameManager : Singleton<GameManager>
         // Eðer tüm kartlar doðru yerleþtirildiyse
         if (totalCards == 0)
         {
+            GameObject.Find("ConfettiDirectionalRainbow").GetComponent<ParticleSystem>().Play();
             DOVirtual.DelayedCall(2f, () =>
             {
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
