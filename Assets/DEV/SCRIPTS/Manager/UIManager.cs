@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
     [Header("Health")]
 
-    public static int health = 3;
+    public int health = 3;
     [SerializeField] private Image[] hearts;
 
     [Header("Happiness")]
