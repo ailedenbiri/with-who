@@ -3880,8 +3880,8 @@ Transform:
   m_GameObject: {fileID: 651744225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0026252912, w: 0.9999966}
-  m_LocalPosition: {x: 0.1, y: 13, z: 0}
-  m_LocalScale: {x: 1.2293038, y: 1.2293038, z: 0.036879115}
+  m_LocalPosition: {x: 2.19, y: 9.67, z: 0}
+  m_LocalScale: {x: 1.0978006, y: 1.0978006, z: 0.032934025}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1474344374}
@@ -7150,9 +7150,9 @@ Material:
     - _GradIsRadial: 0
     - _GrassManualAnim: 1
     - _GrassManualToggle: 0
-    - _GrassRadialBend: 0.1
-    - _GrassSpeed: 7
-    - _GrassWind: 18.1
+    - _GrassRadialBend: 0.08
+    - _GrassSpeed: 2
+    - _GrassWind: 0.7
     - _GreyscaleBlend: 1
     - _GreyscaleLuminosity: 0
     - _GreyscaleOutline: 0
