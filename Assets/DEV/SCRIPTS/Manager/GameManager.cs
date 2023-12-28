@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,8 +14,32 @@ public class GameManager : Singleton<GameManager>
     public GridCO[] newGrids;
 
     public bool isGamePlaying = true;
+
+    public LevelInfo levelInfo;
     private void Start()
     {
+        string levelInfoText = "";
+
+        foreach (var item in levelInfo.LevelInfos)
+        {
+            string[] temp = item.Split(" ");
+            string temp2 = "";
+            for (int i = 0; i < temp.Length; i++)
+            {
+                if (i == 0)
+                {
+                    temp2 += $"<u>{temp[i]} </u>";
+                }
+                else
+                {
+                    temp2 += $"{temp[i]} ";
+                }
+            }
+            levelInfoText += " - " + temp2 + "\n";
+
+        }
+        GameObject.Find("LevelInfoText").GetComponent<TextMeshProUGUI>().text = levelInfoText;
+        GameObject.Find("LevelText").GetComponent<TextMeshProUGUI>().text = "Level " + (PlayerPrefs.GetInt("SelectedLevel", 0) + 1).ToString();
         Time.timeScale = 1f;
 
         grids = GameObject.FindObjectsOfType<GridCO>(false);

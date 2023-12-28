@@ -39,11 +39,10 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
     private void Start()
     {
         nameText.text = cardInfo.cardName;
-        info.text = cardInfo.info;
-        img.sprite = cardInfo.image;
+        img.sprite = cardInfo.headSprite;
 
         cardImage = transform.GetChild(1).GetComponent<RectTransform>();
-
+        cardImage.GetComponent<Image>().sprite = cardInfo.image;
 
         allColliders = FindObjectsOfType<Collider2D>();
 

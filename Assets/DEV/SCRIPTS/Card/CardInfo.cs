@@ -8,8 +8,8 @@ using UnityEngine;
 public class CardInfo : ScriptableObject
 {
     public string cardName;
-    public string info;
     public Sprite image;
     public GameObject prefab;
     public Sprite cardSprite;
+    public Sprite headSprite;
 }

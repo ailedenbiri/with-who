@@ -6,17 +6,6 @@ using System.Linq;
 
 public class UIManager : Singleton<UIManager>
 {
-    [Header("PausePanel")]
-    [SerializeField] private RectTransform pausePanel;
-    [SerializeField] private Button pauseButton;
-    [SerializeField] private Button playButton;
-
-
-
-    [Header("Settings")]
-    //[SerializeField] private GameObject settingsPanel;
-    [SerializeField] private GameObject hapticOnButton;
-    [SerializeField] private GameObject hapticOffButton;
 
     [Header("LosePanel")]
     [HideInInspector] public CanvasGroup losePanel;
