@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f65c0633485972479672e72d459a958, type: 3}
+  m_Name: TemplateSettings
+  m_EditorClassIdentifier: Assembly-CSharp::TemplateSettings
+  defaultBoinkDuration: 0.1
+  defaultFadeAlpha: 0.9
+  panelAnimation: 1
+  canvasCoinInitialMoveTime: 0.6
+  canvasCoinMoveTime: 1.5
+  canvasCoinDelay: 130
+  canvasCoinRange: 10
+  canvasCoinCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.008627769
+      outSlope: -0.008627769
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.5275229
+    - serializedVersion: 3
+      time: 0.21902238
+      value: -0.10047336
+      inSlope: 0.037641753
+      outSlope: 0.037641753
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.43679166
+    - serializedVersion: 3
+      time: 0.79176974
+      value: 1.0919439
+      inSlope: 0.011167172
+      outSlope: 0.011167172
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4517112
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0
+      outSlope: -0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3692661
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

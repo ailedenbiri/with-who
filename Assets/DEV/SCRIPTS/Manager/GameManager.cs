@@ -11,6 +11,8 @@ public class GameManager : Singleton<GameManager>
     private int totalCards;
 
     public GridCO[] newGrids;
+
+    public bool isGamePlaying = true;
     private void Start()
     {
         Time.timeScale = 1f;
@@ -27,24 +29,28 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-
         foreach (GridCO grid in grids)
         {
             grid.transform.localPosition = grid.startPos;
         }
-        if (Input.GetMouseButton(0))
+        if (isGamePlaying)
         {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
-
-            if (hit.collider != null)
+            if (Input.GetMouseButton(0))
             {
-                if (hit.collider.GetComponent<GridCO>().isEmpty)
+                Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+                if (hit.collider != null)
                 {
-                    hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
+                    if (hit.collider.GetComponent<GridCO>().isEmpty)
+                    {
+                        hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
+                    }
                 }
             }
         }
+
+
     }
 
     Vector3 GetAveragePosition(GridCO[] grids)
@@ -67,6 +73,7 @@ public class GameManager : Singleton<GameManager>
         // Eðer tüm kartlar doðru yerleþtirildiyse
         if (totalCards == 0)
         {
+            isGamePlaying = false;
             GameObject.Find("ConfettiDirectionalRainbow").GetComponent<ParticleSystem>().Play();
             DOVirtual.DelayedCall(2f, () =>
             {
@@ -79,8 +86,9 @@ public class GameManager : Singleton<GameManager>
 
     public void GoNextLevel()
     {
+        PlayerPrefs.SetInt("SelectedLevel", PlayerPrefs.GetInt("SelectedLevel", 0) + 1);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void RestartLevel()

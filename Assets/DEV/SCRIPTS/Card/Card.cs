@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 using System.Linq;
 using DG.Tweening;
 
-public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
+public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
 
 {
 
@@ -67,7 +67,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
                 {
                     if (hit.collider.GetComponent<GridCO>().isEmpty)
                     {
-
+                        Taptic.Medium();
                         GameManager.i.CorrectCardPlaced();
 
                         UIManager uiManager = FindObjectOfType<UIManager>();
@@ -90,8 +90,11 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
                     //can azalsýn
                     UIManager.i.health--;
                     FindObjectOfType<UIManager>().UpdateHearts();
+                    Taptic.Medium();
                     if (UIManager.i.health == 0)
                     {
+                        Taptic.Heavy();
+                        GameManager.i.isGamePlaying = false;
                         UIManager.i.losePanel.gameObject.SetActive(true);
                         Time.timeScale = 0f;
                         UIManager.i.losePanel.DOFade(1f, 0.8f).SetUpdate(true);
@@ -114,22 +117,19 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        firstPos = cardImage.position;
-        cardSelected = true;
-        cardImage.gameObject.SetActive(true);
-        GetComponentInChildren<CanvasGroup>().DOFade(0f, 0.3f);
+        if (GameManager.i.isGamePlaying)
+        {
+            firstPos = cardImage.position;
+            cardSelected = true;
+            cardImage.gameObject.SetActive(true);
+            GetComponentInChildren<CanvasGroup>().DOFade(0f, 0.3f);
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         cardImage.position = eventData.position;
     }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-    }
-
-
 }
 
 
