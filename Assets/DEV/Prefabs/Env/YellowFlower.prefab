@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 106403386684189187}
   - component: {fileID: 5599545610876558794}
   m_Layer: 0
-  m_Name: yellowflower
+  m_Name: YellowFlower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.9, y: 4.8, z: 0}
-  m_LocalScale: {x: 0.9820334, y: 0.92426676, z: 0.027728}
+  m_LocalScale: {x: 0.038075294, y: 0.035835575, z: 0.0010750672}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ac531ff1b45dc047a4799c21dd9504b, type: 2}
+  - {fileID: 2100000, guid: fd1493f2a5ee52c43bde8f1f670c97ec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 600
   m_Sprite: {fileID: 21300000, guid: a852d6e7be0cf9148a054f40d94e56fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
