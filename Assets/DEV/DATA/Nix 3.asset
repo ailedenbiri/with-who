@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nix 3
   m_EditorClassIdentifier: 
   cardName: Nix
-  info: "what a cute flowers.    lets decorate! this pine tree for chr\u0131stmas."
+  info: "what a cute flowers.    lets decorate this pine tree for chr\u0131stmas."
   image: {fileID: 21300000, guid: 85d44afc54d25e94e9a54def318b498a, type: 3}
   prefab: {fileID: 3431890241264140449, guid: eb77f1e81074679479bb0b890fa0fda7, type: 3}
   cardSprite: {fileID: 21300000, guid: 2f4d88b0bc726824c9a7a9c57a06524b, type: 3}
