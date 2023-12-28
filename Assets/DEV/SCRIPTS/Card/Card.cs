@@ -85,13 +85,17 @@ public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDrag
                 }
                 else if (hit.collider != null)
                 {
-                    UIManager uiManager = FindObjectOfType<UIManager>();
-                    uiManager.DecreaseCityHappiness(5); //þehrin mutluluðu azalsýn
+                    UIManager.i.DecreaseCityHappiness(5); //þehrin mutluluðu azalsýn
 
                     //can azalsýn
                     UIManager.i.health--;
                     FindObjectOfType<UIManager>().UpdateHearts();
-
+                    if (UIManager.i.health == 0)
+                    {
+                        UIManager.i.losePanel.gameObject.SetActive(true);
+                        Time.timeScale = 0f;
+                        UIManager.i.losePanel.DOFade(1f, 0.8f).SetUpdate(true);
+                    }
                 }
                 else
                 {

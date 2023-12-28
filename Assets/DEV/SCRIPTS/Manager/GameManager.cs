@@ -13,6 +13,8 @@ public class GameManager : Singleton<GameManager>
     public GridCO[] newGrids;
     private void Start()
     {
+        Time.timeScale = 1f;
+
         grids = GameObject.FindObjectsOfType<GridCO>(false);
         Camera.main.transform.position = GetAveragePosition(grids);
         totalCards = GameObject.FindObjectsOfType<Card>(false).Length;
@@ -25,23 +27,24 @@ public class GameManager : Singleton<GameManager>
 
     void Update()
     {
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
         foreach (GridCO grid in grids)
         {
             grid.transform.localPosition = grid.startPos;
         }
-        if (hit.collider != null)
+        if (Input.GetMouseButton(0))
         {
-            if (hit.collider.GetComponent<GridCO>().isEmpty)
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+            if (hit.collider != null)
             {
-                hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
+                if (hit.collider.GetComponent<GridCO>().isEmpty)
+                {
+                    hit.transform.localPosition = hit.collider.GetComponent<GridCO>().startPos + Vector3.up * 0.1f;
+                }
             }
         }
-
-
-
     }
 
     Vector3 GetAveragePosition(GridCO[] grids)
@@ -67,10 +70,23 @@ public class GameManager : Singleton<GameManager>
             GameObject.Find("ConfettiDirectionalRainbow").GetComponent<ParticleSystem>().Play();
             DOVirtual.DelayedCall(2f, () =>
             {
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                SceneManager.LoadScene(currentSceneIndex + 1);
+                UIManager.i.winPanel.gameObject.SetActive(true);
+                Time.timeScale = 0f;
+                UIManager.i.winPanel.DOFade(1f, 0.8f).SetUpdate(true);
             });
         }
+    }
+
+    public void GoNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
+    }
+
+    public void RestartLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
 }

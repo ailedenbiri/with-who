@@ -6,31 +6,23 @@ using System.Linq;
 
 public class UIManager : Singleton<UIManager>
 {
-
-    [Header("MainMenu")]
-    [SerializeField] GameObject mainMenuPanel;
-    [SerializeField] private GameObject restartButton;
-    [SerializeField] private GameObject quitGameButton;
-
-
     [Header("PausePanel")]
-    [SerializeField] private GameObject pausePanel;
-    [SerializeField] private GameObject pauseButton;
-    [SerializeField] private GameObject playButton;
+    [SerializeField] private RectTransform pausePanel;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Button playButton;
 
 
 
     [Header("Settings")]
-    [SerializeField] private GameObject settingsPanel;
-    [SerializeField] private GameObject quitButton;
-    [SerializeField] private GameObject soundOnButton;
-    [SerializeField] private GameObject soundOffButton;
+    //[SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject hapticOnButton;
+    [SerializeField] private GameObject hapticOffButton;
 
     [Header("LosePanel")]
-    [SerializeField] private GameObject losePanel;
+    [HideInInspector] public CanvasGroup losePanel;
 
     [Header("WinPanel")]
-    [SerializeField] private GameObject winPanel;
+    [HideInInspector] public CanvasGroup winPanel;
 
 
 
@@ -53,7 +45,12 @@ public class UIManager : Singleton<UIManager>
     {
         cityHappiness = 50;
         UpdateFaces();
-       
+        losePanel = GameObject.Find("LosePanel").GetComponent<CanvasGroup>();
+        losePanel.gameObject.SetActive(false);
+        losePanel.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(() => GameManager.i.RestartLevel());
+        winPanel = GameObject.Find("WinPanel").GetComponent<CanvasGroup>();
+        winPanel.gameObject.SetActive(false);
+        winPanel.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(()=> GameManager.i.GoNextLevel());
     }
 
     // HEARTH
