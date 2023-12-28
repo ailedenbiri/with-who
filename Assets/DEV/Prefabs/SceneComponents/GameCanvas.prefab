@@ -2136,6 +2136,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5779812490297308304}
     m_Modifications:
+    - target: {fileID: 4674316399180220014, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_Color.b
+      value: 0.390566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674316399180220014, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4674316399180220014, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4889594177244179920, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_Name
       value: CardPanel
@@ -2170,7 +2182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584804011593483820, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 240
+      value: 395.523
       objectReference: {fileID: 0}
     - target: {fileID: 6584804011593483820, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2206,7 +2218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584804011593483820, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 246
+      value: 197.762
       objectReference: {fileID: 0}
     - target: {fileID: 6584804011593483820, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2219,6 +2231,14 @@ PrefabInstance:
     - target: {fileID: 6584804011593483820, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231368197519192668, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231368198640942774, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 450.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

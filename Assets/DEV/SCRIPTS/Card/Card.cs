@@ -41,7 +41,6 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
         nameText.text = cardInfo.cardName;
         info.text = cardInfo.info;
         img.sprite = cardInfo.image;
-        transform.GetChild(0).GetComponent<Image>().sprite = cardInfo.cardSprite;
 
         cardImage = transform.GetChild(1).GetComponent<RectTransform>();
 
