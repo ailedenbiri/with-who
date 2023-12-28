@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Leo 2
   m_EditorClassIdentifier: 
   cardName: Leo
-  info: "\u0131 l\u0131ke trees."
+  info: I like trees.
   image: {fileID: 21300000, guid: 226a5d31133e224498ef0330fe69039f, type: 3}
   prefab: {fileID: 8844162073231507130, guid: 4aacc2476f57ec64a86c5019c0a01bae, type: 3}
   cardSprite: {fileID: 21300000, guid: a4f3ad2d45cff884db1be0dd7ce18857, type: 3}
