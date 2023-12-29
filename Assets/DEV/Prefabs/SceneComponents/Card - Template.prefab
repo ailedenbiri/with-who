@@ -168,7 +168,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 128.75
+  m_fontSize: 21
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -442,8 +442,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Leo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c1482dbce654844b9ba1c753cbea5d80, type: 2}
-  m_sharedMaterial: {fileID: 7374927986402738804, guid: c1482dbce654844b9ba1c753cbea5d80, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0ba6766dd9aeb5a4d86fe46fd83f5464, type: 2}
+  m_sharedMaterial: {fileID: 7722375197648905277, guid: 0ba6766dd9aeb5a4d86fe46fd83f5464, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17.45
+  m_fontSize: 14.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
