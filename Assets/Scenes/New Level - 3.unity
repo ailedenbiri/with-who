@@ -925,7 +925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 210163081130859274, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
       propertyPath: orthographic size
-      value: 7
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 916426045194772947, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
       propertyPath: m_LocalScale.y

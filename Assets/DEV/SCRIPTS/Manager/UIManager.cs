@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 public class UIManager : Singleton<UIManager>
 {
@@ -21,6 +22,7 @@ public class UIManager : Singleton<UIManager>
 
     public int health = 3;
     [SerializeField] private Image[] hearts;
+    
 
     [Header("Happiness")]
 

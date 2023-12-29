@@ -476,6 +476,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 243.6675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2853239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2853239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2853239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719192362317586143, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -682,7 +706,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 210163081130859274, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
       propertyPath: orthographic size
-      value: 7
+      value: 3.2
       objectReference: {fileID: 0}
     - target: {fileID: 916426045194772947, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
       propertyPath: m_LocalScale.y
