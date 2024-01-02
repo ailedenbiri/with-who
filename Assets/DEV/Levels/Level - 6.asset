@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405c354e56b98e740a046f09d79d5ac9, type: 3}
-  m_Name: Level - 5
+  m_Name: Level - 6
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Mike thinks that the cactus is very dangerous.
-  - Leo is with the cactus, not with Mike."
-  - Nix is between Mike and Leo.
-  - Sandy is standing on the sand and to the right of Leo.
+  - Mike wants to take a walk by the lake.
+  - Leo needs to do a research assignment on cactus.
+  - Nix wants to examine the cactus but wants to be next to it.
+  - Sandy wants to help Leo with his research.
