@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9, y: -1429}
+  m_AnchoredPosition: {x: 91, y: -1444}
   m_SizeDelta: {x: 270.61, y: 93.832}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &7642190200780203106
@@ -2348,9 +2348,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 5779812490297308304}
     m_Modifications:
     - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_fontAsset
       value: 
       objectReference: {fileID: 11400000, guid: 9adccbd5c05df2a45a761a5fe9c5d5f0, type: 2}
+    - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_sharedMaterial
       value: 
@@ -2361,11 +2369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034317395763618025, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -80
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 2034317395763618025, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -60
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 2034317395763618025, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2373,7 +2381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2034317395763618025, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4889594177244179920, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_Name

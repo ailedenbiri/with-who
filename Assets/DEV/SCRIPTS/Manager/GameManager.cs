@@ -1,4 +1,4 @@
-using DG.Tweening;
+ï»¿using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -35,7 +35,7 @@ public class GameManager : Singleton<GameManager>
                     temp2 += $"{temp[i]} ";
                 }
             }
-            levelInfoText += " - " + temp2 + "\n";
+            levelInfoText += " â–¡  " + temp2 + "\n";
 
         }
         GameObject.Find("LevelInfoText").GetComponent<TextMeshProUGUI>().text = levelInfoText;
@@ -95,7 +95,7 @@ public class GameManager : Singleton<GameManager>
     {
         totalCards--;
 
-        // Eðer tüm kartlar doðru yerleþtirildiyse
+        // EÄŸer tÃ¼m kartlar doÄŸru yerleÅŸtirildiyse
         if (totalCards == 0)
         {
             isGamePlaying = false;
