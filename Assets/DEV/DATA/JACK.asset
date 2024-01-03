@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e39c969ec29874dba387edff736801, type: 3}
+  m_Name: JACK
+  m_EditorClassIdentifier: 
+  cardName: Jack
+  image: {fileID: 21300000, guid: d8838ae6b14d6634abbde14cf1fa3ed2, type: 3}
+  prefab: {fileID: 5764041019350487350, guid: 1a567b99a7cae30418820d25652ad3ad, type: 3}
+  cardSprite: {fileID: 0}
+  headSprite: {fileID: 21300000, guid: 933066b6b09d5d541b10aa53a24cddf9, type: 3}
