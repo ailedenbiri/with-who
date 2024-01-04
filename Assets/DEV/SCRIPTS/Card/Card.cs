@@ -67,7 +67,8 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
                     {
                         Taptic.Medium();
                         GameManager.i.CorrectCardPlaced();
-
+                        GameManager.i.CompletedCards.Add(this.cardInfo.cardName);
+                        GameManager.i.UpdateLevelInfo();
                         UIManager uiManager = FindObjectOfType<UIManager>();
                         uiManager.IncreaseCityHappiness(5); //þehir mutluluðu artsýn 
 

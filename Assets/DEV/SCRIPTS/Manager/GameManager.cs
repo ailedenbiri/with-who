@@ -16,9 +16,44 @@ public class GameManager : Singleton<GameManager>
     public bool isGamePlaying = true;
 
     public LevelInfo levelInfo;
+
+    string levelInfoText;
+
+    [HideInInspector] public List<string> CompletedCards;
+
+    public void UpdateLevelInfo()
+    {
+        levelInfoText = "";
+        foreach (var item in levelInfo.LevelInfos)
+        {
+            string[] temp = item.Split(" ");
+            string temp2 = "";
+            for (int i = 0; i < temp.Length; i++)
+            {
+                if (i == 0)
+                {
+                    temp2 += $"<u>{temp[i]} </u>";
+                }
+                else
+                {
+                    temp2 += $"{temp[i]} ";
+                }
+            }
+            if (CompletedCards.Contains(temp2.Split(" ")[0].Substring(3)))
+            {
+                levelInfoText += " <sprite=1> " + temp2 + "\n";
+            }
+            else
+            {
+                levelInfoText += " <sprite=0> " + temp2 + "\n";
+            }
+        }
+        GameObject.Find("LevelInfoText").GetComponent<TextMeshProUGUI>().text = levelInfoText;
+    }
+
     private void Start()
     {
-        string levelInfoText = "";
+        levelInfoText = "";
 
         foreach (var item in levelInfo.LevelInfos)
         {
@@ -35,7 +70,7 @@ public class GameManager : Singleton<GameManager>
                     temp2 += $"{temp[i]} ";
                 }
             }
-            levelInfoText += " □  " + temp2 + "\n";
+            levelInfoText += " <sprite=0> " + temp2 + "\n";
 
         }
         GameObject.Find("LevelInfoText").GetComponent<TextMeshProUGUI>().text = levelInfoText;

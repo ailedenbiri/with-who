@@ -2348,6 +2348,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5779812490297308304}
     m_Modifications:
     - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_text
+      value: <sprite=0> New Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_fontSize
       value: 50
       objectReference: {fileID: 0}
@@ -2359,6 +2363,10 @@ PrefabInstance:
       propertyPath: m_fontSizeMax
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a0a9bedd985076348bbfd20114421f28, type: 2}
     - target: {fileID: 457410058054062092, guid: b8bc5ab81cf4ed240873160f42cce512, type: 3}
       propertyPath: m_sharedMaterial
       value: 
