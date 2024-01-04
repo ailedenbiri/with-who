@@ -328,6 +328,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4128753720085288873, guid: 47b088cc99df7a1468688aded3d403db, type: 3}
   m_PrefabInstance: {fileID: 2229222531869268323}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &813817537 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7191671863479131023, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &829145315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -596,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3f797495314b60547b68cb2f42dca0f3, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
@@ -605,7 +610,7 @@ PrefabInstance:
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[1]
       value: 
-      objectReference: {fileID: 1381109829}
+      objectReference: {fileID: 813817537}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[2]
       value: 
