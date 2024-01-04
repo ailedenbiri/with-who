@@ -1180,6 +1180,7 @@ MonoBehaviour:
   - {fileID: 8829427025605897559}
   isGamePlaying: 1
   levelInfo: {fileID: 11400000, guid: a8d16abf54f9a8c439cae2b92ee4db5d, type: 2}
+  CompletedCards: []
 --- !u!4 &1831931945
 Transform:
   m_ObjectHideFlags: 0
@@ -1373,11 +1374,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1650965411232413031, guid: 2e7ab8b0d2e4cd5418e48e3af05c6c65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 1650965411232413031, guid: 2e7ab8b0d2e4cd5418e48e3af05c6c65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.7
+      value: 11.2
       objectReference: {fileID: 0}
     - target: {fileID: 1650965411232413031, guid: 2e7ab8b0d2e4cd5418e48e3af05c6c65, type: 3}
       propertyPath: m_LocalPosition.z
