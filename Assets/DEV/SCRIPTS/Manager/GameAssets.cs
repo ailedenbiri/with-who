@@ -26,6 +26,18 @@ public class GameAssets : MonoBehaviour
         Sequence fSeq = DOTween.Sequence();
         fSeq.Append(f.transform.DOScale(0f, 0.3f).From().SetEase(Ease.OutBack));
         fSeq.Append(f.transform.DOScale(0f, 0.3f).SetEase(Ease.InBack).SetDelay(0.3f));
+        fSeq.AppendCallback(() => Destroy(f.gameObject));
+    }
+
+    public GameObject correctMark;
+
+    public void CreateCorrectMark(Vector3 pos)
+    {
+        GameObject f = Instantiate(correctMark, pos, correctMark.transform.rotation);
+        Sequence fSeq = DOTween.Sequence();
+        fSeq.Append(f.transform.DOScale(0f, 0.3f).From().SetEase(Ease.OutBack));
+        fSeq.Append(f.transform.DOScale(0f, 0.3f).SetEase(Ease.InBack).SetDelay(0.3f));
+        fSeq.AppendCallback(() => Destroy(f.gameObject));
     }
 
 }

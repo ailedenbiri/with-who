@@ -1018,6 +1018,7 @@ MonoBehaviour:
   newGrids: []
   isGamePlaying: 1
   levelInfo: {fileID: 11400000, guid: ad1c3db125383904098115e8a7f9caf8, type: 2}
+  CompletedCards: []
 --- !u!4 &1831931945
 Transform:
   m_ObjectHideFlags: 0

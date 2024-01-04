@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -41,7 +42,7 @@ public class GameManager : Singleton<GameManager>
             }
             if (CompletedCards.Contains(temp2.Split(" ")[0].Substring(3)))
             {
-                levelInfoText += " <sprite=1> " + temp2 + "\n";
+                //levelInfoText += " <sprite=1> " + temp2 + "\n";
             }
             else
             {
@@ -85,6 +86,8 @@ public class GameManager : Singleton<GameManager>
         {
             newGrids[i].transform.DOScale(Vector3.zero, 0.4f).SetDelay(i * 0.1f).From();
         }
+
+        FindInActiveObjectByName("Button_MainMenu").GetComponent<Button>().onClick.AddListener(() => GoMainMenu());
     }
 
     void Update()
@@ -161,6 +164,27 @@ public class GameManager : Singleton<GameManager>
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void GoMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public GameObject FindInActiveObjectByName(string name)
+    {
+        Transform[] objs = Resources.FindObjectsOfTypeAll<Transform>() as Transform[];
+        for (int i = 0; i < objs.Length; i++)
+        {
+            if (objs[i].hideFlags == HideFlags.None)
+            {
+                if (objs[i].name == name)
+                {
+                    return objs[i].gameObject;
+                }
+            }
+        }
+        return null;
     }
 
 }
