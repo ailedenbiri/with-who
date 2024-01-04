@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : Singleton<UIManager>
 {
@@ -22,7 +23,7 @@ public class UIManager : Singleton<UIManager>
 
     public int health = 3;
     [SerializeField] private Image[] hearts;
-    
+
 
     [Header("Happiness")]
 
@@ -41,12 +42,14 @@ public class UIManager : Singleton<UIManager>
         losePanel.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(() => GameManager.i.RestartLevel());
         winPanel = GameObject.Find("WinPanel").GetComponent<CanvasGroup>();
         winPanel.gameObject.SetActive(false);
-        winPanel.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(()=> GameManager.i.GoNextLevel());
+        winPanel.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(() => GameManager.i.GoNextLevel());
     }
 
     // HEARTH
     public void UpdateHearts()
     {
+        hearts[0].transform.parent.DOKill(true);
+        hearts[0].transform.parent.DOPunchScale(Vector3.one * 0.2f, 0.3f);
         for (int i = 0; i < hearts.Length; i++)
         {
             hearts[i].enabled = i < health;
@@ -57,13 +60,13 @@ public class UIManager : Singleton<UIManager>
 
     public void UpdateFaces()
     {
-        if(cityHappiness >= 75) //HAPPY
+        if (cityHappiness >= 75) //HAPPY
         {
-           happyFace.gameObject.SetActive(true);
-           normalFace.gameObject.SetActive(false);
-           sadFace.gameObject.SetActive(false);
+            happyFace.gameObject.SetActive(true);
+            normalFace.gameObject.SetActive(false);
+            sadFace.gameObject.SetActive(false);
         }
-        else if(50 <= cityHappiness && cityHappiness < 75) //NORMAL
+        else if (50 <= cityHappiness && cityHappiness < 75) //NORMAL
         {
             happyFace.gameObject.SetActive(false);
             normalFace.gameObject.SetActive(true);

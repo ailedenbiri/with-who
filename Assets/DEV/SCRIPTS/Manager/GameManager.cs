@@ -78,6 +78,12 @@ public class GameManager : Singleton<GameManager>
 
     }
 
+    public void CameraShake(float duration, Vector3 strength)
+    {
+        Camera.main.DOKill(true);
+        Camera.main.DOShakePosition(duration, strength);
+    }
+
     Vector3 GetAveragePosition(GridCO[] grids)
     {
         Vector3 totalPositions = Vector3.zero;
@@ -113,7 +119,7 @@ public class GameManager : Singleton<GameManager>
     {
         PlayerPrefs.SetInt("SelectedLevel", PlayerPrefs.GetInt("SelectedLevel", 0) + 1);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene($"New Level - {PlayerPrefs.GetInt("SelectedLevel", 0) + 1}");
     }
 
     public void RestartLevel()

@@ -86,16 +86,21 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
                     UIManager.i.DecreaseCityHappiness(5); //þehrin mutluluðu azalsýn
 
                     //can azalsýn
+                    GameManager.i.CameraShake(0.2f, Vector3.one * 0.1f);
                     UIManager.i.health--;
                     FindObjectOfType<UIManager>().UpdateHearts();
                     Taptic.Medium();
                     if (UIManager.i.health == 0)
                     {
-                        Taptic.Heavy();
                         GameManager.i.isGamePlaying = false;
-                        UIManager.i.losePanel.gameObject.SetActive(true);
-                        Time.timeScale = 0f;
-                        UIManager.i.losePanel.DOFade(1f, 0.8f).SetUpdate(true);
+                        DOVirtual.DelayedCall(1.3f, () =>
+                        {
+                            Taptic.Heavy();
+                            UIManager.i.losePanel.gameObject.SetActive(true);
+                            Time.timeScale = 0f;
+                            UIManager.i.losePanel.DOFade(1f, 0.8f).SetUpdate(true);
+                        });
+
                     }
                 }
                 else
