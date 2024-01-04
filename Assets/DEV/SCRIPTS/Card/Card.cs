@@ -88,7 +88,8 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
                     //can azalsýn
                     GameManager.i.CameraShake(0.2f, Vector3.one * 0.1f);
                     UIManager.i.health--;
-                    FindObjectOfType<UIManager>().UpdateHearts();
+                    UIManager.i.UpdateHearts();
+                    GameAssets.i.CreateFailedMark(hit.collider.gameObject.transform.position);
                     Taptic.Medium();
                     if (UIManager.i.health == 0)
                     {
@@ -99,6 +100,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
                             UIManager.i.losePanel.gameObject.SetActive(true);
                             Time.timeScale = 0f;
                             UIManager.i.losePanel.DOFade(1f, 0.8f).SetUpdate(true);
+
                         });
 
                     }

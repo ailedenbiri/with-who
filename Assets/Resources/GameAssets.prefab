@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterPlacedParticle: {fileID: 254929607480157372, guid: d333830eabe37c6478f9afe40af4c286, type: 3}
+  failedMark: {fileID: 4397282323287078551, guid: 93f75e27ed8b13c4ba28af4b8fa10fc9, type: 3}
