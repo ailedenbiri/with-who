@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level - 5
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Mike thinks that the cactus is very dangerous.
+  - Mike thinks the cactus is dangerous but believes the tree is not dangerous.
   - Leo is with the cactus, not with Mike.
-  - Nix is between Mike and Leo.
+  - Nix is one step above Leo, but not Sandy's.
   - Sandy is standing on the sand and to the right of Leo.

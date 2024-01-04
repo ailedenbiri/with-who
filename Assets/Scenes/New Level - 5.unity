@@ -298,6 +298,10 @@ PrefabInstance:
       propertyPath: colliders.Array.data[0]
       value: 
       objectReference: {fileID: 851806710}
+    - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
+      propertyPath: colliders.Array.data[1]
+      value: 
+      objectReference: {fileID: 2071790935}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -434,6 +438,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4806871152777179064, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
   m_PrefabInstance: {fileID: 624657929}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &759414832 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 890647994518813075, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!58 &851806710 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 2696830086758434377, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
@@ -549,12 +558,20 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3b70b8282eb154d468afa4c0e259fc1f, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 2107309626}
+      objectReference: {fileID: 759414832}
+    - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
+      propertyPath: colliders.Array.data[1]
+      value: 
+      objectReference: {fileID: 2092820723}
+    - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
+      propertyPath: colliders.Array.data[2]
+      value: 
+      objectReference: {fileID: 1671332059}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -914,6 +931,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1671332059 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 555538564992138095, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1831931943
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,9 +1005,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1579493865581728694, guid: b004b96661ccad04cb667ffbb603808b, type: 3}
   m_PrefabInstance: {fileID: 1460388282}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &2107309626 stripped
+--- !u!58 &2071790935 stripped
 CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 5399502577244780895, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2596028433272102040, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &2092820723 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2476305991101457748, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
   m_PrefabInstance: {fileID: 8829427025605897558}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2679241619805039626 stripped
