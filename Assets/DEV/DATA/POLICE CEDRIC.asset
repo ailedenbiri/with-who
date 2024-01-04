@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81e39c969ec29874dba387edff736801, type: 3}
-  m_Name: DR. MARIA
+  m_Name: POLICE CEDRIC
   m_EditorClassIdentifier: 
-  cardName: "Mar\u0131a"
-  image: {fileID: 21300000, guid: ba32bd36df367d241907b109dcf19da8, type: 3}
-  prefab: {fileID: 7079028846379971205, guid: 87b309ea91f326444820e96245358068, type: 3}
+  cardName: "Cedr\u0131c"
+  image: {fileID: 21300000, guid: 90a8341548176594f87af7c0651ee37b, type: 3}
+  prefab: {fileID: 9165621838180624212, guid: 0661b2f602000b747a6ff2d909bebaf0, type: 3}
   cardSprite: {fileID: 0}
-  headSprite: {fileID: 21300000, guid: 06621ffd4830a064c934e5f247267cb7, type: 3}
+  headSprite: {fileID: 21300000, guid: 8b803a874ead36e4583709041ac205bc, type: 3}
