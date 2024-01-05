@@ -231,11 +231,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2657983
+      value: -6.94
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.351048
+      value: 6.24
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -446,11 +446,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5
+      value: 7.24
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: 2.24
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -904,6 +904,7 @@ MonoBehaviour:
   - {fileID: 1603493221}
   isGamePlaying: 1
   levelInfo: {fileID: 11400000, guid: 7d4920d57bc8212418813f7d90d7479f, type: 2}
+  CompletedCards: []
 --- !u!4 &1831931945
 Transform:
   m_ObjectHideFlags: 0
@@ -1027,11 +1028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.2
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4030418255551059641, guid: 27e6503258d8b1149b6ed52cd246403e, type: 3}
       propertyPath: m_LocalPosition.z
