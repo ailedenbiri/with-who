@@ -250,7 +250,7 @@ namespace FlushTemplate
             settingsPanelParent.gameObject.SetActive(true);
             Sequence panelSequence = DOTween.Sequence().SetUpdate(true);
             Transform panelHolder = settingsPanelParent.GetChild(1);
-            panelHolder.localScale = Vector3.one;
+            //panelHolder.localScale = Vector3.one * 0.85f;
             Image settingsBackground = settingsPanelParent.GetChild(0).GetComponent<Image>();
             settingsBackground.DOFade(settings.defaultFadeAlpha, time).SetUpdate(true);
             panelHolder.GetComponent<RectTransform>().anchoredPosition = (-Screen.width - 500f) * Vector2.right;

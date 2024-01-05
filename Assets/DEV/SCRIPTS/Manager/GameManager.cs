@@ -54,6 +54,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        Application.targetFrameRate = 60;
+
         levelInfoText = "";
 
         foreach (var item in levelInfo.LevelInfos)
@@ -88,6 +90,7 @@ public class GameManager : Singleton<GameManager>
         }
 
         FindInActiveObjectByName("Button_MainMenu").GetComponent<Button>().onClick.AddListener(() => GoMainMenu());
+        FindInActiveObjectByName("Button_Home").GetComponent<Button>().onClick.AddListener(() => GoMainMenu());
     }
 
     void Update()
