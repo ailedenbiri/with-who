@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelInfos:
   - Leo is below the tree, can talk with Nix.
-  - Mike is above Leo.
+  - Mike is one step above Leo.
   - Nix thinks that sand is more beautiful than grass.
