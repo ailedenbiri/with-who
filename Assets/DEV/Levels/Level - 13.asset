@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405c354e56b98e740a046f09d79d5ac9, type: 3}
-  m_Name: Level - 12
+  m_Name: Level - 13
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Sandy can't get close to the cat because she is allergic to it.
-  - Jack wants to pet the cat he saw on the sand.
+  - Richard is standing in the middle of two cacti.
+  - Sandy is standing to the bottom right of Richard.
+  - Jack is standing in the middle of the cactus and the cat.
