@@ -131,6 +131,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
             cardImage.gameObject.SetActive(true);
             GetComponentInChildren<CanvasGroup>().DOFade(0f, 0.3f);
         }
+        cardImage.position = eventData.position;
     }
 
     public void OnDrag(PointerEventData eventData)
