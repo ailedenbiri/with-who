@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405c354e56b98e740a046f09d79d5ac9, type: 3}
-  m_Name: Level - 12
+  m_Name: Level - 24
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Sandy wants to stroll around the water.
+  - Marco is standing next to Frank.
+  - Frank is looking for a trash bin to throw away garbage.
+  - Alexa wants to take a closer look at the snowman and the penguins.
