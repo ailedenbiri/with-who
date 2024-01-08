@@ -15,6 +15,7 @@ MonoBehaviour:
   LevelInfos:
   - Jack got very tired from skateboarding and needs to rest around the tree.
   - Mike is throwing a coin into the fountain and making a wish.
-  - Sandy is waiting for Leo at the entrance of the market.
-  - Leo is very thirsty in the desert and needs to go to the store.
+  - Sandy is waiting to the right of Leo for the store owner.
+  - Leo got very thirsty and found a market in the desert, but the owner of the store
+    is not there. Leo will wait for him in front of the store.
   - Richard is searching for water in the desert.

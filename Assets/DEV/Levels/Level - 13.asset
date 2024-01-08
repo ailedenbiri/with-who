@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405c354e56b98e740a046f09d79d5ac9, type: 3}
-  m_Name: Level - 7
+  m_Name: Level - 13
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Sandy wants to go to the park with Nix.
-  - Leo enjoys riding a bicycle.
-  - Nix was very impressed by the flowers he saw while going to the park, and she
-    wants to spend time both with Sandy and the flowers.
-  - Mike left his newspaper on the bench by the lake.
+  - Marco wants to move the snowman to the upper left of the penguins.
+  - Alexa is looking at the fish trapped under the frozen water.
+  - Frank is looking for a trash bin to throw away garbage.
