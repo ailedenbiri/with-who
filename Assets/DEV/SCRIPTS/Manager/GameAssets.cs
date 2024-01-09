@@ -40,4 +40,11 @@ public class GameAssets : MonoBehaviour
         fSeq.AppendCallback(() => Destroy(f.gameObject));
     }
 
+    public List<string> cardNames;
+
+    public bool IsCardName(string name)
+    {
+        return cardNames.Contains(name);
+    }
+
 }
