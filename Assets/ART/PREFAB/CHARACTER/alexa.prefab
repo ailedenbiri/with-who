@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1489092504927641950}
   - component: {fileID: 6526190625674167423}
   m_Layer: 0
-  m_Name: grayhair
+  m_Name: alexa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

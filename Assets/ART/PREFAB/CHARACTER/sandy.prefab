@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6183185163503597577}
   - component: {fileID: 4731288053801228811}
   m_Layer: 0
-  m_Name: blonde
+  m_Name: sandy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

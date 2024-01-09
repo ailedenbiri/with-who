@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e39c969ec29874dba387edff736801, type: 3}
   m_Name: FRANK
   m_EditorClassIdentifier: 
-  cardName: FRANK
+  cardName: Frank
   image: {fileID: 21300000, guid: 976ba075092510d41b522951b049cb21, type: 3}
   prefab: {fileID: 2858154264738053308, guid: 439dc6a8189b82043974406a3bba313c, type: 3}
   cardSprite: {fileID: 0}

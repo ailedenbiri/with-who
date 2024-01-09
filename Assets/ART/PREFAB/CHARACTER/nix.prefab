@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7633368683313393752}
   - component: {fileID: 7158625298266515397}
   m_Layer: 0
-  m_Name: blonde-white
+  m_Name: nix
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
