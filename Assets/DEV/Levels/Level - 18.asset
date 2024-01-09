@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405c354e56b98e740a046f09d79d5ac9, type: 3}
+  m_Name: Level - 18
+  m_EditorClassIdentifier: 
+  LevelInfos:
+  - Leo continues to travel with the camel.
+  - Jack is waiting to ride the camel after Leo gets off.
+  - Nix watched the migrating birds and saw a bird perched on the cactus. She wanted
+    to catch it.
+  - Mike wants to cook food on the campfire.
+  - Richard wants to be by the water's edge while warming up by the campfire.
