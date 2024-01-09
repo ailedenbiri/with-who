@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 6ad1c3766371f254abd845e3c26feaed, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
@@ -576,6 +576,10 @@ PrefabInstance:
       propertyPath: colliders.Array.data[1]
       value: 
       objectReference: {fileID: 730183029}
+    - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
+      propertyPath: colliders.Array.data[2]
+      value: 
+      objectReference: {fileID: 802731551}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -589,6 +593,11 @@ RectTransform:
 --- !u!58 &730183029 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 1298939225735768623, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &802731551 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5953789621447711143, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
   m_PrefabInstance: {fileID: 8829427025605897558}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1064181954 stripped

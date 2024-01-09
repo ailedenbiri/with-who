@@ -221,12 +221,12 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 2f7e9984203c400419b567e899cb2b9b, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 1778300315}
+      objectReference: {fileID: 1653117604}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[1]
       value: 
@@ -1148,6 +1148,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1653117604 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8127443189202205727, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
+  m_PrefabInstance: {fileID: 8829427025605897558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!58 &1752179953 stripped
 CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 655692121353467007, guid: 4593f50394e906d418b2f3919c44dcb3, type: 3}
