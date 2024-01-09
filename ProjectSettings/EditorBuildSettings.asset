@@ -66,6 +66,9 @@ EditorBuildSettings:
     path: Assets/Scenes/New Level - 19.unity
     guid: 7f794560a5a392246a196d4dce8bf175
   - enabled: 1
+    path: Assets/Scenes/New Level - 20.unity
+    guid: d958107e73e160044abab1b5ce812dfc
+  - enabled: 1
     path: Assets/Scenes/New Level - 21.unity
     guid: 2c860afb99e75c440bd8b344a1cd8fee
   - enabled: 1
