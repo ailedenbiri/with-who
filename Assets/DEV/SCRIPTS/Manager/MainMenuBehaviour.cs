@@ -30,6 +30,6 @@ public class MainMenuBehaviour : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene($"New Level - {(PlayerPrefs.GetInt("SelectedLevel", 0) % 30) + 1}");
+        SceneManager.LoadScene($"New Level - {PlayerPrefs.GetInt("SelectedLevel", 0) + 1}");
     }
 }

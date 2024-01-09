@@ -174,7 +174,7 @@ public class GameManager : Singleton<GameManager>
 
     public void GoNextLevel()
     {
-        PlayerPrefs.SetInt("SelectedLevel", (PlayerPrefs.GetInt("SelectedLevel", 0) % 30) + 1);
+        PlayerPrefs.SetInt("SelectedLevel", (PlayerPrefs.GetInt("SelectedLevel", 0) + 1) % 30);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene($"New Level - {PlayerPrefs.GetInt("SelectedLevel", 0) + 1}");
     }
