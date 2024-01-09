@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3927795004540833306
+--- !u!1 &4314182840232727677
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5533614652348224907}
-  - component: {fileID: 1810263688317763868}
+  - component: {fileID: 6023459601575615174}
+  - component: {fileID: 5601142051429838707}
   m_Layer: 0
-  m_Name: grocery-store
+  m_Name: santa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5533614652348224907
+--- !u!4 &6023459601575615174
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927795004540833306}
+  m_GameObject: {fileID: 4314182840232727677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.74, y: -1.66, z: 0}
-  m_LocalScale: {x: 0.050798126, y: 0.050798126, z: 0.050798126}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 1.211, y: -0.205, z: 0}
+  m_LocalScale: {x: 0.9243668, y: 0.9243668, z: 0.035329293}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1810263688317763868
+--- !u!212 &5601142051429838707
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927795004540833306}
+  m_GameObject: {fileID: 4314182840232727677}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 600
-  m_Sprite: {fileID: 21300000, guid: 75698f2d4de7d194ea38f359e42f4053, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3e3cc5d11bd6b684ba322404107580c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
