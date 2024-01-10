@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu]
 public class LevelInfo : ScriptableObject
 {
+    [TextArea]
     public string[] LevelInfos;
 }

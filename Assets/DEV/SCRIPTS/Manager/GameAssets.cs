@@ -44,7 +44,14 @@ public class GameAssets : MonoBehaviour
 
     public bool IsCardName(string name)
     {
-        return cardNames.Contains(name);
+        foreach (var item in cardNames)
+        {
+            if (name.Contains(item))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
