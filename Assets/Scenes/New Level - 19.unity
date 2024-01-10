@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bird1
       objectReference: {fileID: 0}
+    - target: {fileID: 5676941373947103217, guid: 40665b4bff9684445bf005a4de642c69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1132,6 +1136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bird1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5676941373947103217, guid: 40665b4bff9684445bf005a4de642c69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1722,6 +1730,10 @@ PrefabInstance:
     - target: {fileID: 5676941373947103217, guid: 40665b4bff9684445bf005a4de642c69, type: 3}
       propertyPath: m_Name
       value: bird1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676941373947103217, guid: 40665b4bff9684445bf005a4de642c69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
