@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Level - 7
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Sandy wants to go to behind the slide with Nix.
   - Leo enjoys riding a bicycle.
-  - Nix was very impressed by the flowers he saw while going to the slide, and she
-    wants to spend time both with Sandy and the flowers.
   - Mike left his newspaper on the bench by the lake.
+  - Nix is standing next to the slide and the flower.
+  - Sandy wants to play on the slide with Nix.

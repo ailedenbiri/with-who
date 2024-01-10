@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level - 14
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Leo wants to gather the dried bushes.
+  - Leo wants to be next to the cat while clearing the dry grass.
   - Sandy wants to help Leo, but she has an allergy to cats.
   - Jack is in the same row as Sandy, but there is some distance between them.
   - Richard is in the middle of Sandy and Jack.

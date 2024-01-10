@@ -556,12 +556,12 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 3b70b8282eb154d468afa4c0e259fc1f, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 1112330838}
+      objectReference: {fileID: 1189252898}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[1]
       value: 
@@ -782,28 +782,28 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 87305398ef76ea545806492c9a8a3082, type: 2}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 523145164}
+      objectReference: {fileID: 1362317879}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[1]
       value: 
-      objectReference: {fileID: 1705377310}
+      objectReference: {fileID: 1112330838}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[2]
       value: 
-      objectReference: {fileID: 1189252898}
+      objectReference: {fileID: 747342950}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[3]
       value: 
-      objectReference: {fileID: 1362317879}
+      objectReference: {fileID: 747342950}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[4]
       value: 
-      objectReference: {fileID: 1112330838}
+      objectReference: {fileID: 747342950}
     - target: {fileID: 8372953625554350168, guid: 21cc49d11116a1543b01652edecee2c6, type: 3}
       propertyPath: colliders.Array.data[5]
       value: 
