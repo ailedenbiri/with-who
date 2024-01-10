@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Level - 26
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Johnny called Marco and told him he was waiting in front of the swing and asked
-    him to come there.
-  - Marco told Johnny that he was next to the snowman and the trash bin.
+  - Johnny is waiting in front of the swing.
+  - Marco is in the middle of the trash bin and the snowman.
   - Frank is standing on the right side of the swing.
