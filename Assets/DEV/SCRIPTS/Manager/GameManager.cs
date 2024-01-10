@@ -30,35 +30,22 @@ public class GameManager : Singleton<GameManager>
         {
             string[] temp = item.Split(" ");
             string temp2 = "";
-            List<string> tempStringArray = new List<string>();
 
             for (int i = 0; i < temp.Length; i++)
             {
                 if (GameAssets.i.IsCardName(temp[i]))
                 {
                     temp2 += $"<u>{temp[i]} </u>";
-                    tempStringArray.Add(temp[i]);
                 }
                 else
                 {
                     temp2 += $"{temp[i]} ";
                 }
             }
-            if (tempStringArray.Count > 0)
+
+            if (CompletedCards.Contains(temp2.Split(" ")[0].Substring(3)))
             {
-                bool hasAll = tempStringArray.All(itm2 => CompletedCards.Contains(itm2));
-                foreach (var x in tempStringArray)
-                {
-                    print(x);
-                }
-                if (hasAll)
-                {
-                    //levelInfoText += " <sprite=1> " + temp2 + "\n";
-                }
-                else
-                {
-                    levelInfoText += " <sprite=0> " + temp2 + "\n";
-                }
+                //levelInfoText += " <sprite=1> " + temp2 + "\n";
             }
             else
             {
