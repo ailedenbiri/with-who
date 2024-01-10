@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level - 29
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Johnny and Marco are in the middle of Santa Claus and the dog.
-  - Frank is standing to the left of the dog.
+  - Marco is standing to the top right of the dog and to the left of Santa.
+  - Johnny is standing to the right of the dog.
   - Sarah tied her dog to the street lamp and is going to the market.
+  - Frank is standing to the left of the dog.

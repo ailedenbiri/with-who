@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level - 28
   m_EditorClassIdentifier: 
   LevelInfos:
-  - Johnny and Marco are in front of Santa Claus.
+  - Johnny is standing to the bottom left of Santa.
+  - Marco is standing to the bottom right of Santa.
   - Frank is standing in the middle of Sarah's dog and the penguins.
   - Sarah is going to the market with her dog. The dog is standing behind Sarah.
