@@ -45,7 +45,7 @@ public class GameManager : Singleton<GameManager>
 
             if (CompletedCards.Contains(temp2.Split(" ")[0].Substring(3)))
             {
-                //levelInfoText += " <sprite=1> " + temp2 + "\n";
+                levelInfoText += " <sprite=1> <s>" + temp2 + "</s>\n";
             }
             else
             {
