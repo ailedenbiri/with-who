@@ -84,7 +84,7 @@ public class GameManager : Singleton<GameManager>
         Time.timeScale = 1f;
 
         grids = GameObject.FindObjectsOfType<GridCO>(false);
-        Camera.main.transform.position = GetAveragePosition(grids);
+        Camera.main.transform.position = GetAveragePosition(grids) - (Vector3.up * 1f);
         totalCards = GameObject.FindObjectsOfType<Card>(false).Length;
 
         for (int i = 0; i < newGrids.Length; i++)
