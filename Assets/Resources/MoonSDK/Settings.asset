@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c151705efef5748b9a8ff640aafdf0, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  GameAnalytics: 1
+  gameAnalyticsIosGameKey: 
+  gameAnalyticsIosSecretKey: 
+  gameAnalyticsAndroidGameKey: 38f510ec28904c0578e2e44111ae7557
+  gameAnalyticsAndroidSecretKey: c1c10d72f0b4ad9feb31f48bc0f05670bae63999
+  Facebook: 1
+  facebookAppId: 1167685477946194
+  facebookClientId: 3b224ed1756b7d43b8da8aeb52476d01
+  StudioLogo: 0
+  studioLogoSprite: {fileID: 0}
