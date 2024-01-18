@@ -788,6 +788,7 @@ MonoBehaviour:
   newGrids: []
   isGamePlaying: 1
   levelInfo: {fileID: 11400000, guid: 5d041b77c09aac0499b8ec9445eddff7, type: 2}
+  CompletedCards: []
 --- !u!4 &1831931945
 Transform:
   m_ObjectHideFlags: 0
@@ -822,18 +823,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 210163081130859274, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
-      propertyPath: orthographic size
-      value: 5.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 916426045194772947, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.19707
-      objectReference: {fileID: 0}
-    - target: {fileID: 916426045194772947, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.8684
-      objectReference: {fileID: 0}
     - target: {fileID: 3209554784971489404, guid: fd151c74c6ba2b248ae77ecf46b508f7, type: 3}
       propertyPath: m_Name
       value: OTHER
