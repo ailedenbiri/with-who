@@ -95,6 +95,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IDragHandler
                     Taptic.Medium();
                     if (UIManager.i.health == 0)
                     {
+                        MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Fail, PlayerPrefs.GetInt("SelectedLevel", 0) + 1);
                         GameManager.i.isGamePlaying = false;
                         DOVirtual.DelayedCall(1.3f, () =>
                         {

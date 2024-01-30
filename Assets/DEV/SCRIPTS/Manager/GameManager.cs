@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using GameAnalyticsSDK;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -81,6 +82,7 @@ public class GameManager : Singleton<GameManager>
         }
         GameObject.Find("LevelInfoText").GetComponent<TextMeshProUGUI>().text = levelInfoText;
         GameObject.Find("LevelText").GetComponent<TextMeshProUGUI>().text = "Level " + (PlayerPrefs.GetInt("SelectedLevel", 0) + 1).ToString();
+        MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, PlayerPrefs.GetInt("SelectedLevel", 0) + 1);
         Time.timeScale = 1f;
 
         grids = GameObject.FindObjectsOfType<GridCO>(false);
@@ -149,6 +151,7 @@ public class GameManager : Singleton<GameManager>
         if (totalCards == 0)
         {
             isGamePlaying = false;
+            MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Complete, PlayerPrefs.GetInt("SelectedLevel", 0) + 1);
             GameObject.Find("ConfettiDirectionalRainbow").GetComponent<ParticleSystem>().Play();
             DOVirtual.DelayedCall(2f, () =>
             {
@@ -161,9 +164,11 @@ public class GameManager : Singleton<GameManager>
 
     public void GoNextLevel()
     {
+
         PlayerPrefs.SetInt("SelectedLevel", (PlayerPrefs.GetInt("SelectedLevel", 0) + 1) % 30);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene($"New Level - {PlayerPrefs.GetInt("SelectedLevel", 0) + 1}");
+        
     }
 
     public void RestartLevel()
